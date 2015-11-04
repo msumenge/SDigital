@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Doc Title</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" /><!-- image/png -->
+    
+    <!-- MDL -->
+    <link rel="stylesheet" href="./css/material.min.css">
+    <script src="./js/material.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="./js/jquery-2.1.4.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    
+    <!-- Site -->
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+    
+    <style>
+        .banner {
+            height: 300px;
+            width: 100%;
+            background: #eee;
+            margin: 0px;
+        }
+        .services {
+            
+        }
+        .services div {
+            height: 250px;
+            width: 250px;
+            -webkit-border-radius: 125px;
+            -moz-border-radius: 125px;
+            border-radius: 125px;
+            border: 1px solid #999;
+            margin: 0px auto;
+        }
+        .services h3 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .container {
+            width: 100%;
+            height: auto;
+        }
+        .tiles {
+            box-sizing: border-box;
+            height: 600px;
+        }
+        .tile-1 {
+            background: #3ed37d;
+        }
+        .tile-2 {
+            height: 300px;
+            background: #3598db;
+        }
+        .tile-3 {
+            height: 300px;
+            background: #e74c3c;
+        }
+        .person-photo div {
+            height: 200px;
+            width: 200px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+            border: 1px solid #999;
+            margin: 0px auto;;
+        }
+        .person-desc h4 {
+            margin-bottom: 20px;
+        }
+        .person-desc p {
+            line-height: 1.8em;
+            font-size: 1.1em;
+        }
+        .bg {
+            background-color: #ccc;
+        }
+        .mdl-textfield {
+            width: 100%;
+            margin-bottom: 4px;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="banner"></div>
+    <h2 class="text-center marg-top-100 marg-bottom-50">Our Services</h2>
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--4-col services">
+            <div></div>
+            <h3 class="text-center">Design</h3>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col services">
+            <div></div>
+            <h3 class="text-center">Development</h3>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col services">
+            <div></div>
+            <h3 class="text-center">Marketing</h3>
+        </div>
+    </div>
+    
+    <div class="mdl-grid mdl-grid--no-spacing marg-top-100">
+        <div class="mdl-cell mdl-cell--6-col tiles tile-1">
+            
+        </div>
+        <div class="mdl-cell mdl-cell--6-col tiles">
+            <div class="mdl-grid mdl-grid--no-spacing">
+                <div class="mdl-cell mdl-cell--12-col tile-2">
+
+                </div>
+                <div class="mdl-cell mdl-cell--12-col tile-3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mdl-grid marg-top-100">
+        <div class="mdl-cell mdl-cell--4-col person-photo">
+            <div></div>
+        </div>
+        <div class="mdl-cell mdl-cell--8-col person-desc">
+            <h4>Ally</h4>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+    </div>
+    
+    <div class="mdl-grid marg-bottom-100">
+        <div class="mdl-cell mdl-cell--8-col person-desc">
+            <h4 class="text-right">Maryo</h4>
+            <p class="text-right">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col person-photo">
+            <div></div>
+        </div>
+    </div>
+    
+    <div class="mdl-grid marg-top-100 marg-bottom-100">
+        <div class="mdl-cell mdl-cell--12-col">
+            <h2 class="text-center">Contact Us</h2>
+        </div>
+        
+        <div class="mdl-cell mdl-cell--6-col">
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="form-name" name="form-name" />
+                            <label class="mdl-textfield__label" for="form-name">Name</label>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="form-phone" name="form-phone" pattern="-?[0-9]*(\.[0-9]+)?"/>
+                            <label class="mdl-textfield__label" for="form-phone">Phone</label>
+                            <span class="mdl-textfield__error">Input is not a number!</span>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="form-email" name="form-email" />
+                            <label class="mdl-textfield__label" for="form-email">Email</label>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <textarea class="mdl-textfield__input" type="text" rows="10" id="form-msg" name="form-msg"></textarea>
+                        <label class="mdl-textfield__label" for="form-msg">Message or enquiry...</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col text-center">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                send
+            </button>
+        </div>
+    </div>
+    
+    <footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Features</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Updates</a></li>
+      </ul>
+  </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Questions</a></li>
+        <li><a href="#">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">Title</div>
+    <ul class="mdl-mega-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+
+</footer>
+    
+    <script>
+        $(document).ready(function() {
+            
+        });
+    </script>
+</body>
+
+</html>

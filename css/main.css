@@ -1,0 +1,36 @@
+@font-face {
+    font-family: font_one;
+    src: url(../fonts/VarelaRound-Regular.otf);
+}
+* {box-sizing: border-box;}
+body {
+    color: #34495e;
+    font-family: font_one;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: font_one;
+    margin: 0px;
+}
+
+/* Utilities */
+.font-1 { font-family: font_one; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-green { color: #2ecc71; }
+.text-red { color: #e74c3c; }
+.bg-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+/*  background-image: url();        */
+}
+.bg-contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+/*  background-image: url();        */
+}
+.marg-top-50 {margin-top: 50px;}
+.marg-top-100 {margin-top: 100px;}
+.marg-bottom-50 {margin-bottom: 50px;}
+.marg-bottom-100 {margin-bottom: 100px;}
