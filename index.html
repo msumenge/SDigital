@@ -40,6 +40,22 @@
             border: 1px solid #999;
             margin: 0px auto;
         }
+		.services div i{
+			font-size: 10em;
+			margin-top: 50px;
+        }
+		.services.design div {
+			color: #1abc9c;
+			background: #ecf0f1;
+		}
+		.services.development div {
+			color: #e67e22;
+			background: #ecf0f1;
+		}
+		.services.marketing div{
+			color: #9b59b6;
+			background: #ecf0f1;
+		}
         .services h3 {
             margin-top: 30px;
             margin-bottom: 30px;
@@ -53,17 +69,16 @@
             height: 600px;
         }
         .tile-1 {
-            background: #3ed37d;
+            background-image: url(./images/dyadic.png);
+			border-right: 1px solid #555;
         }
         .tile-2 {
             height: 300px;
-            background-image: url(studioSapphireLogo.png);
-            background-repeat: no-repeat;
-            background-size: contain;
+            background-image: url(./images/studioSapphireLogo.png);
         }
         .tile-3 {
             height: 300px;
-            background: #e74c3c;
+            background-image: url(./images/tuffweed.png);
         }
         .person-photo div {
             height: 200px;
@@ -72,7 +87,13 @@
             -moz-border-radius: 100px;
             border-radius: 100px;
             border: 1px solid #999;
-            margin: 0px auto;;
+            margin: 0px auto;
+        }
+        .person-photo div.ally {
+            background-image: url(./images/ally.png);
+        }
+        .person-photo div.maryo {
+            background-image: url(./images/maryo.png);
         }
         .person-desc h4 {
             margin-bottom: 20px;
@@ -97,69 +118,79 @@
     <h2 class="text-center marg-top-100 marg-bottom-50">Our Services</h2>
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col services design">
-            <div><img src="designIcon.png"/></div>
+			<div class="text-center"><i class="fa fa-pencil"></i></div>
             <h3 class="text-center">Design</h3>
-            <h5 class="text-center">
-                  <li>Logo Design</li>
-                  <li>Brand Identity (Business Cards, Custom Stationery etc.)</li>
-            </h5>
+            <ul>
+				<li>Logo design</li>
+				<li>Business cards</li>
+				<li>Email footer</li>
+				<li>Company style guide</li>
+				<li>Custom stationery</li>
+			</ul>
         </div>
         <div class="mdl-cell mdl-cell--4-col services development">
-            <div><img src="developmentIcon.png"/></div>
+            <div class="text-center"><i class="fa fa-code"></i></div>
             <h3 class="text-center">Development</h3>
-            <h5 class="text-center">
-                <li>Website Design and Development (Designs that follow trends and are responsive)</li>
-                <li>Wordpress Websites</li>
-            </h5>
+            <ul>
+				<li>Responsive web design</li>
+				<li>Custom web application</li>
+				<li>Single page website</li>
+				<li>Wordpress site</li>
+				<li>Online shop</li>
+				<li>Personal portfolio</li>
+			</ul>
         </div>
         <div class="mdl-cell mdl-cell--4-col services marketing">
-            <div><img src="marketingIcon.png"/></div>
+            <div class="text-center"><i class="fa fa-line-chart"></i></div>
             <h3 class="text-center">Marketing</h3>
-            <h5 class="text-center">
-            <li>Digital Marketing Strategy</li>
-            <li>Social Media Strategy and/or Management</li>
-            <li>Google Ad Words</li>
-            </h5>
+            <ul>
+				<li>SEO</li>
+				<li>Google Ad Words</li>
+				<li>Google Analitics</li>
+				<li>Social media management</li>
+			</ul>
         </div>
     </div>
     
     <div class="mdl-grid mdl-grid--no-spacing marg-top-100">
-        <div class="mdl-cell mdl-cell--6-col tiles tile-1">
+        <div class="mdl-cell mdl-cell--6-col tiles tile-1 bg-contain">
             
         </div>
         <div class="mdl-cell mdl-cell--6-col tiles">
             <div class="mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-cell mdl-cell--12-col tile-2">
-                    <div><a href="http://www.studiosapphire.co"></a></div>
+                <div class="mdl-cell mdl-cell--12-col tile-2 bg-contain">
+                	<a href="http://www.studiosapphire.co"></a>
                 </div>
-                <div class="mdl-cell mdl-cell--12-col tile-3">
+                <div class="mdl-cell mdl-cell--12-col tile-3 bg-contain">
 
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="mdl-grid marg-top-100">
-        <div class="mdl-cell mdl-cell--4-col person-photo">
-            <div></div>
-        </div>
-        <div class="mdl-cell mdl-cell--8-col person-desc">
-            <h4>Ally</h4>
-            <p>Hey everyone! I am currently studying a Bachelor of Design (Majoring in Web) at SAE Institute, Brisbane. I specialise in Web Design, but also can assist you with Graphic Design and Digital Marketing. I have a bubbly personality and am easy to work with. I am also super organised. To learn more about me, check out her website,  full portfolio or blog. </p>
-        </div>
-    </div>
+    <div class="box-shadow">
+		<div class="mdl-grid marg-top-100 padd-top-50 padd-bottom-25">
+			<div class="mdl-cell mdl-cell--4-col person-photo">
+				<div class="bg-cover ally"></div>
+			</div>
+			<div class="mdl-cell mdl-cell--8-col person-desc">
+				<h4>Ally</h4>
+				<p>Hey everyone! I am currently studying a Bachelor of Design (Majoring in Web) at SAE Institute, Brisbane. I specialise in Web Design, but also can assist you with Graphic Design and Digital Marketing. I have a bubbly personality and am easy to work with. I am also super organised. To learn more about me, check out her website,  full portfolio or blog. </p>
+			</div>
+		</div>
+
+		<div class="mdl-grid marg-bottom-50 padd-top-25 padd-bottom-50">
+			<div class="mdl-cell mdl-cell--8-col person-desc">
+				<h4 class="text-right">Maryo</h4>
+				<p class="text-right">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+			</div>
+			<div class="mdl-cell mdl-cell--4-col person-photo">
+				<div class="bg-cover maryo"></div>
+			</div>
+		</div>
+	</div>
     
     <div class="mdl-grid marg-bottom-100">
-        <div class="mdl-cell mdl-cell--8-col person-desc">
-            <h4 class="text-right">Maryo</h4>
-            <p class="text-right">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-        </div>
-        <div class="mdl-cell mdl-cell--4-col person-photo">
-            <div></div>
-        </div>
-    </div>
-    
-    <div class="mdl-grid marg-top-100 marg-bottom-100">
         <div class="mdl-cell mdl-cell--12-col">
             <h2 class="text-center">Contact Us</h2>
         </div>

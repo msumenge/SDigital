@@ -1,14 +1,27 @@
+/*
+Resources:
+-http://css3generator.com/
+
+*/
+
 @font-face {
     font-family: font_one;
+    src: url(../fonts/TitilliumWeb-Light.ttf);
+}
+@font-face {
+    font-family: font_two;
     src: url(../fonts/VarelaRound-Regular.otf);
 }
 * {box-sizing: border-box;}
 body {
     color: #34495e;
-    font-family: font_one;
+    font-family: font_two;
 }
-h1, h2, h3, h4, h5, h6, p {
-    font-family: font_one;
+h1, h2, h3, h4, h5, h6 {
+	font-family: font_one;
+}
+div, p {
+    font-family: font_two;
     margin: 0px;
 }
 
@@ -34,3 +47,18 @@ h1, h2, h3, h4, h5, h6, p {
 .marg-top-100 {margin-top: 100px;}
 .marg-bottom-50 {margin-bottom: 50px;}
 .marg-bottom-100 {margin-bottom: 100px;}
+.padd-top-25 {padding-top: 25px;}
+.padd-top-50 {padding-top: 50px;}
+.padd-bottom-25 {padding-bottom: 25px;}
+.padd-bottom-50 {padding-bottom: 50px;}
+.animate {
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.box-shadow {
+	-webkit-box-shadow: 0 0 50px 0 #858585;
+	box-shadow: 0 0 50px 0 #858585;
+}
