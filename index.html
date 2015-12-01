@@ -25,7 +25,7 @@
         .banner {
             height: 300px;
             width: 100%;
-            background-image: url(banner.png);
+            background-image: url(./images/background3.png);
             background-repeat: no-repeat;
             margin: 0px;
         }
@@ -109,13 +109,46 @@
             width: 100%;
             margin-bottom: 4px;
         }
+        .demo-layout-transparent {
+          background: url('../assets/demos/transparent.jpg') center / cover;
+        }
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent .mdl-layout__drawer-button {
+          color: white;
+        }
     </style>
     
 </head>
 
 <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Sigma Digital</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="#ourServices">Our Services</a>
+            <a class="mdl-navigation__link" href="#portfolio">Portfolio</a>
+            <a class="mdl-navigation__link" href="#about">About</a>
+            <a class="mdl-navigation__link" href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Sigma Digital</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#ourServices">Our Services</a>
+          <a class="mdl-navigation__link" href="#portfolio">Porfolio</a>
+          <a class="mdl-navigation__link" href="#about">About</a>
+          <a class="mdl-navigation__link" href="#contact">Contact</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content"><!-- Your content goes here --></div>
+      </main>
+    </div>
     <div class="banner"></div>
-    <h2 class="text-center marg-top-100 marg-bottom-50">Our Services</h2>
+    <h2 class="text-center marg-top-100 marg-bottom-50" id="ourServices">Our Services</h2>
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col services design">
 			<div class="text-center"><i class="fa fa-pencil"></i></div>
@@ -146,13 +179,13 @@
             <ul>
 				<li>SEO</li>
 				<li>Google Ad Words</li>
-				<li>Google Analitics</li>
+				<li>Google Analytics</li>
 				<li>Social media management</li>
 			</ul>
         </div>
     </div>
     
-    <div class="mdl-grid mdl-grid--no-spacing marg-top-100">
+    <div class="mdl-grid mdl-grid--no-spacing marg-top-100" id="portfolio">
         <div class="mdl-cell mdl-cell--6-col tiles tile-1 bg-contain">
             
         </div>
@@ -168,14 +201,14 @@
         </div>
     </div>
     
-    <div class="box-shadow">
+    <div class="box-shadow" id="about">
 		<div class="mdl-grid marg-top-100 padd-top-50 padd-bottom-25">
 			<div class="mdl-cell mdl-cell--4-col person-photo">
 				<div class="bg-cover ally"></div>
 			</div>
 			<div class="mdl-cell mdl-cell--8-col person-desc">
 				<h4>Ally</h4>
-				<p>Hey everyone! I am currently studying a Bachelor of Design (Majoring in Web) at SAE Institute, Brisbane. I specialise in Web Design, but also can assist you with Graphic Design and Digital Marketing. I have a bubbly personality and am easy to work with. I am also super organised. To learn more about me, check out her website,  full portfolio or blog. </p>
+				<p>Hey everyone! I am currently studying a Bachelor of Design (Majoring in Web) at SAE Institute, Brisbane. I specialise in Web Design, but also can assist you with Graphic Design and Digital Marketing. I have a bubbly personality and am easy to work with. I am also super organised. To learn more about me, check out <a href="www.allyeastman.com.au">my website</a>, <a href="http://www.theloop.com.au/aeastman/portfolio">full portfolio</a> or <a href="www.allyeastman.tumblr.com">  blog.</a> </p>
 			</div>
 		</div>
 
@@ -190,7 +223,7 @@
 		</div>
 	</div>
     
-    <div class="mdl-grid marg-bottom-100">
+    <div class="mdl-grid marg-bottom-100" id="contact">
         <div class="mdl-cell mdl-cell--12-col">
             <h2 class="text-center">Contact Us</h2>
         </div>
