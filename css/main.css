@@ -1,7 +1,12 @@
 /*
 Resources:
--http://css3generator.com/
+http://css3generator.com/
+http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
 
+Break points:
+    Desktop >= 840px
+    Tablet  >= 480px
+    Phone   <= 479px
 */
 
 @font-face {
@@ -62,3 +67,195 @@ div, p {
 	-webkit-box-shadow: 0 0 50px 0 #858585;
 	box-shadow: 0 0 50px 0 #858585;
 }
+.zoom-on-hover:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*
+__________           .___      
+\______   \ ____   __| _/__.__.
+ |    |  _//  _ \ / __ <   |  |
+ |    |   (  <_> ) /_/ |\___  |
+ |______  /\____/\____ |/ ____|
+        \/            \/\/     
+*/
+
+.banner {
+    height: 150px;
+    width: 100%;
+    background-image: url(../images/background3.png);
+    margin: 0px;
+}
+.services {
+    
+}
+.services div {
+    height: 160px;
+    width: 160px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    border: 1px solid #999;
+    margin: 0px auto;
+}
+.services div i{
+    font-size: 6.5em;
+    margin-top: 30px;
+}
+.services.design div {
+    color: #1abc9c;
+    background: #ecf0f1;
+}
+.services.development div {
+    color: #e67e22;
+    background: #ecf0f1;
+}
+.services.marketing div{
+    color: #9b59b6;
+    background: #ecf0f1;
+}
+.services h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container {
+    width: 100%;
+    height: auto;
+}
+.tiles {
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.tile-1 {
+    background-image: url(../images/dyadic.png);
+    height: 200px;
+}
+.tile-2 {
+    background-image: url(../images/studioSapphireLogo.png);
+    height: 150px;
+}
+.tile-3 {
+    background-image: url(../images/tuffweed.png);
+    height: 150px;
+}
+.tile-1, .tile-2, .tile-3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.person-photo div {
+    height: 200px;
+    width: 200px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    border: 1px solid #999;
+    margin: 0px auto;
+}
+.person-photo div.ally {
+    background-image: url(../images/ally.png);
+}
+.person-photo div.maryo {
+    background-image: url(../images/maryo.png);
+}
+.person-desc h4 {
+    margin-bottom: 20px;
+}
+.person-desc p {
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+.mdl-textfield {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+/*
+___________            __                
+\_   _____/___   _____/  |_  ___________ 
+ |    __)/  _ \ /  _ \   __\/ __ \_  __ \
+ |     \(  <_> |  <_> )  | \  ___/|  | \/
+ \___  / \____/ \____/|__|  \___  >__|   
+     \/                         \/       
+*/
+
+.mdl-mega-footer {
+    height: 85px;
+}
+
+@media screen and (min-width: 480px) {
+    .banner {
+        height: 200px;
+    }
+}
+@media screen and (min-width: 840px) {
+    .banner {
+        height: 300px;
+    }
+    .services div {
+        height: 250px;
+        width: 250px;
+        -webkit-border-radius: 125px;
+        -moz-border-radius: 125px;
+        border-radius: 125px;
+        border: 1px solid #999;
+        margin: 0px auto;
+        position: relative;
+        overflow: hiddens;
+        cursor: default;
+        overflow: hidden;
+    }
+    .services div i{
+        font-size: 10em;
+        margin-top: 50px;
+    }
+    .services div ul{
+        margin-left: 20px;
+        position: absolute;
+        top: 250px;
+        left: 0px;
+    }
+    .services div ul li{
+        list-style-type: none;
+    }
+    .services.design div:hover ul {
+        position: absolute;
+        top: 50px;
+        left: -8px;
+    }
+    .services.development div:hover ul {
+        position: absolute;
+        top: 30px;
+        left: -15px;
+    }
+    .services.marketing div:hover ul {
+        position: absolute;
+        top: 55px;
+        left: -25px;
+    }
+    .services div:hover i {
+        font-size: 0em;
+    }
+    .tile-1 {
+        height: 400px;
+        background-image: url(../images/dyadic.png);
+    }
+    .tile-2 {
+        height: 200px;
+        background-image: url(../images/studioSapphireLogo.png);
+    }
+    .tile-3 {
+        height: 200px;
+        background-image: url(../images/tuffweed.png);
+    }
+    .tile-1, .tile-2, .tile-3 {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
