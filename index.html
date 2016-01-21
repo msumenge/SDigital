@@ -9,6 +9,7 @@
     
     <!-- MDL -->
     <link rel="stylesheet" href="./css/material.min.css">
+    <!--link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.orange-blue.min.css" /-->
     <script src="./js/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
@@ -50,11 +51,11 @@
         <div class="page-content">
             <div class="banner bg-cover"></div>
             
-    <div class="mdl-grid mdl-grid--no-spacing box-shadow">
+    <div class="mdl-grid box-shadow">
         <div class="mdl-cell mdl-cell--12-col">
-            <h2 class="text-center" id="ourServices">Our Services</h2>
+            <h2 class="text-center marg-top-25" id="ourServices">Our Services</h2>
         </div>
-        <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet services design">
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-tablet mdl-cell--hide-phone services design">
 			<div class="text-center">
                 <i class="fa fa-pencil animate"></i>
                 <ul class="animate">
@@ -66,9 +67,8 @@
                 </ul>
             </div>
             <h3 class="text-center">Design</h3>
-            
         </div>
-        <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet services development">
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-tablet mdl-cell--hide-phone services development">
             <div class="text-center">
                 <i class="fa fa-code animate"></i>
                 <ul class="animate">
@@ -82,7 +82,7 @@
             </div>
             <h3 class="text-center">Development</h3>
         </div>
-        <div class="mdl-cell mdl-cell--4-col mdl-cell--2-col-tablet services marketing">
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-tablet mdl-cell--hide-phone services marketing">
             <div class="text-center">
                 <i class="fa fa-line-chart animate"></i>
                 <ul class="animate">
@@ -93,12 +93,45 @@
                 </ul>
             </div>
             <h3 class="text-center">Marketing</h3>
-            
         </div>
+        
+        <div class="mdl-cell mdl-cell--3-col-tablet mdl-cell--hide-desktop services design text-center mdl-card mdl-shadow--2dp">
+            <h4>Design <i class="fa fa-pencil"></i></h4>
+            <ul>
+                <li>Logo design</li>
+                <li>Business cards</li>
+                <li>Email footer</li>
+                <li>Company style guide</li>
+                <li>Custom stationery</li>
+            </ul>
+        </div>
+        <div class="mdl-cell mdl-cell--3-col-tablet mdl-cell--hide-desktop services development text-center mdl-card mdl-shadow--2dp">
+            <h4>Development <i class="fa fa-code"></i></h4>
+            <ul>
+                <li>Single page website</li>
+                <li>Wordpress site</li>
+                <li>Online shop</li>
+                <li>Personal portfolio</li>
+                <li>Custom web application</li>
+                <li>Responsive web design</li>
+            </ul>
+        </div>
+        <div class="mdl-cell mdl-cell--2-col-tablet mdl-cell--hide-desktop services marketing text-center mdl-card mdl-shadow--2dp">
+            <h4>Marketing <i class="fa fa-line-chart"></i></h4>
+            <ul>
+                <li>SEO</li>
+                <li>Google Ad Words</li>
+                <li>Google Analytics</li>
+                <li>Social media management</li>
+            </ul>
+        </div>
+        <div class="mdl-cell mdl-cell--12-col padd-top-25"></div>
     </div>
     
-    <h2 class="text-center marg-top-100" id="portfolio">Portfolio</h2>
-    <div class="mdl-grid mdl-grid--no-spacing">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+            <h2 class="text-center marg-top-25" id="portfolio">Portfolio</h2>
+        </div>
         <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet tiles tile-1 zoom-on-hover animate">
             
         </div>
@@ -112,40 +145,42 @@
                 </div>
             </div>
         </div>
+        <div class="mdl-cell mdl-cell--12-col padd-top-25"></div>
     </div>
     
-    
-    <div class="box-shadow marg-top-100">
-        <h2 class="text-center marg-top-100 padd-top-50" id="about">About</h2>
+    <div class="mdl-grid box-shadow">
+        <div class="mdl-cell mdl-cell--12-col">
+            <h2 class="text-center marg-top-25" id="about">About</h2>
+        </div>
 		<div class="mdl-grid padd-bottom-25">
-			<div class="mdl-cell mdl-cell--4-col person-photo">
+			<div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-cell--middle person-photo">
 				<div class="bg-cover ally"></div>
 			</div>
-			<div class="mdl-cell mdl-cell--8-col person-desc">
-				<h4>Ally</h4>
+			<div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone person-desc">
+				<h4 class="marg-top-0">Ally</h4>
 				<p>Hey everyone! I am currently studying a Bachelor of Design (Majoring in Web) at SAE Institute, Brisbane. I specialise in Web Design, but also can assist you with Graphic Design and Digital Marketing. I have a bubbly personality and am easy to work with. I am also super organised. To learn more about me, check out <a href="http://www.allyeastman.com.au" target="_blank">my website</a>, <a href="http://www.theloop.com.au/aeastman/portfolio" target="_blank">full portfolio</a> or <a href="http://www.allyeastman.tumblr.com" target="_blank">  blog.</a> </p>
 			</div>
 		</div>
 
-		<div class="mdl-grid marg-bottom-50 padd-top-25 padd-bottom-50">
-			<div class="mdl-cell mdl-cell--8-col person-desc">
-				<h4 class="text-right">Maryo</h4>
-				<p class="text-right">
+		<div class="mdl-grid padd-top-25">
+            <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-cell--middle person-photo">
+				<div class="bg-cover maryo"></div>
+			</div>
+			<div class="mdl-cell mdl-cell--7-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone person-desc">
+				<h4 class="marg-top-0">Maryo</h4>
+				<p>
                     Hello world... I'm a web development student at SAE Institute Brisbane, currently studying a Bachelor of Interactive Technologies. I have about one year experience in the front-end and back-end web developement, and I also have some basic knowledge in software programming. Check me out at <a href="http://www.maryo.info" target="_blank">www.maryo.info</a>
                 </p>
 			</div>
-			<div class="mdl-cell mdl-cell--4-col person-photo">
-				<div class="bg-cover maryo"></div>
-			</div>
 		</div>
+        <div class="mdl-cell mdl-cell--12-col padd-top-25"></div>
 	</div>
-    
-    <div class="mdl-grid marg-bottom-100" id="contact">
+          
+    <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--12-col">
-            <h2 class="text-center">Contact Us</h2>
+            <h2 class="text-center marg-top-25" id="contact">Contact Us</h2>
         </div>
-        
-        <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-cell mdl-cell--6-col-desktop  mdl-cell--4-col-tablet  mdl-cell--4-col-phone">
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--12-col">
                         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -168,7 +203,7 @@
                     </div>
                 </div>
         </div>
-        <div class="mdl-cell mdl-cell--6-col">
+        <div class="mdl-cell mdl-cell--6-col-desktop  mdl-cell--4-col-tablet  mdl-cell--4-col-phone">
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--12-col">
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -183,6 +218,7 @@
                 send
             </button>
         </div>
+        <div class="mdl-cell mdl-cell--12-col padd-top-25"></div>
     </div>
     
     <footer class="mdl-mega-footer">

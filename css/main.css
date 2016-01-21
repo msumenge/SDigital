@@ -8,7 +8,10 @@ Break points:
     Tablet  >= 480px
     Phone   <= 479px
 */
-
+@font-face {
+    font-family: font_logo;
+    src: url(../fonts/Dense-Regular.otf);
+}
 @font-face {
     font-family: font_one;
     src: url(../fonts/TitilliumWeb-Light.ttf);
@@ -48,10 +51,12 @@ div, p {
     background-position: center;
 /*  background-image: url();        */
 }
+.marg-top-0 {margin-top: 0px;}
 .marg-top-50 {margin-top: 50px;}
 .marg-top-100 {margin-top: 100px;}
 .marg-bottom-50 {margin-bottom: 50px;}
 .marg-bottom-100 {margin-bottom: 100px;}
+
 .padd-top-25 {padding-top: 25px;}
 .padd-top-50 {padding-top: 50px;}
 .padd-bottom-25 {padding-bottom: 25px;}
@@ -83,7 +88,10 @@ __________           .___
  |______  /\____/\____ |/ ____|
         \/            \/\/     
 */
-
+.mdl-layout-title {
+    font-family: font_logo;
+    font-size: 3em;
+}
 .banner {
     height: 150px;
     width: 100%;
@@ -106,17 +114,25 @@ __________           .___
     font-size: 6.5em;
     margin-top: 30px;
 }
-.services.design div {
+.services.design.mdl-card {
     color: #1abc9c;
     background: #ecf0f1;
 }
-.services.development div {
+.services.development.mdl-card {
     color: #e67e22;
     background: #ecf0f1;
 }
-.services.marketing div{
+.services.marketing.mdl-card {
     color: #9b59b6;
     background: #ecf0f1;
+}
+.services ul {
+    padding: 0px;
+    margin-bottom: 25px;
+    color: #555;
+}
+.services ul li {
+    list-style-type: none;
 }
 .services h3 {
     margin-top: 30px;
@@ -183,13 +199,16 @@ ___________            __
      \/                         \/       
 */
 
-.mdl-mega-footer {
-    height: 85px;
-}
-
 @media screen and (min-width: 480px) {
     .banner {
         height: 200px;
+    }
+    .services ul {
+        padding: 0px;
+    }
+    .tile-1 {
+        background-size: contain;
+        height: 300px;
     }
 }
 @media screen and (min-width: 840px) {
@@ -214,13 +233,22 @@ ___________            __
         margin-top: 50px;
     }
     .services div ul{
-        margin-left: 20px;
+        margin-left: 60px;
         position: absolute;
         top: 250px;
         left: 0px;
     }
-    .services div ul li{
-        list-style-type: none;
+    .services.design div {
+        color: #1abc9c;
+        background: #ecf0f1;
+    }
+    .services.development div {
+        color: #e67e22;
+        background: #ecf0f1;
+    }
+    .services.marketing div {
+        color: #9b59b6;
+        background: #ecf0f1;
     }
     .services.design div:hover ul {
         position: absolute;
@@ -243,6 +271,7 @@ ___________            __
     .tile-1 {
         height: 400px;
         background-image: url(../images/dyadic.png);
+        background-size: cover;
     }
     .tile-2 {
         height: 200px;
