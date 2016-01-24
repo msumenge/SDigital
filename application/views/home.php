@@ -134,14 +134,16 @@
                         <h2 class="text-center marg-top-25" id="portfolio">Portfolio</h2>
                     </div>
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet tiles tile-1 zoom-on-hover animate">
+                    	<a href="http://handsomedragongames.com/dyadic" target="_blank" class="fullwidth fullheight"></a>
                     </div>
                     <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet tiles">
                         <div class="mdl-grid mdl-grid--no-spacing">
                             <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet tile-2 zoom-on-hover animate">
-                                <a href="http://www.studiosapphire.co"></a>
+                            	<a href="http://www.studiosapphire.co" target="_blank" class="fullwidth fullheight"></a>
                             </div>
-                            <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet tile-3 zoom-on-hover animate">
-                            </div>
+	                        <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet tile-3 zoom-on-hover animate">
+	                            <a href="https://www.tuffweed.com.au/" target="_blank" class="fullwidth fullheight"></a>
+    	                    </div>
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--12-col padd-top-25"></div>
@@ -203,16 +205,22 @@
                         <div class="mdl-grid">
                             <div class="mdl-cell mdl-cell--12-col">
                                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                    <textarea class="mdl-textfield__input" type="text" rows="10" id="form-msg" name="form-msg"></textarea>
+                                    <textarea class="mdl-textfield__input" rows="10" id="form-msg" name="form-msg"></textarea>
                                     <label class="mdl-textfield__label" for="form-msg">Message or enquiry...</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--12-col text-center">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="form-submit">
                         send
                         </button>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col text-center msg-feedback-success">
+                        <h4>Your message has been sent successfully. Thank you!</h4>
+                    </div>
+                    <div class="mdl-cell mdl-cell--12-col text-center msg-feedback-failed">
+                        <h4>Oops! There was an error. Please try again!</h4>
                     </div>
                     <div class="mdl-cell mdl-cell--12-col padd-top-25"></div>
                 </div>
@@ -254,7 +262,29 @@
     </div>
     <script>
         $(document).ready(function() {
+			$('#form-submit').on('click', function() {
+				var nm = $('#form-name').val();
+				var ph = $('#form-phone').val();
+				var eml = $('#form-email').val();
+				var msg = $('#form-msg').val();
 
+				var dataStr = 'name='+nm+'&phone='+ph+'&email='+eml+'&msg='+msg;
+				
+				$.ajax({
+	        		url: '<?php echo base_url('contact'); ?>',
+	        		data: dataStr,
+	        		type: 'post',
+	        		success: function(res) {
+	        			$('#msg-feedback-success, #msg-feedback-failed').hide();
+		        		
+						if(res == '1') {
+							$('#msg-feedback-success').show();
+						} else {
+							$('#msg-feedback-failed').show();
+						}
+			        }
+	        	});
+			});
         });
     </script>
 </body>

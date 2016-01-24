@@ -39,6 +39,8 @@ div, p {
 .text-right { text-align: right; }
 .text-green { color: #2ecc71; }
 .text-red { color: #e74c3c; }
+.fullwidth { width: 100%; }
+.fullheight { height: 100%; }
 .bg-cover {
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,6 +148,9 @@ __________           .___
     box-sizing: border-box;
     cursor: pointer;
 }
+.tiles a{
+    display: inline-block;
+}
 .tile-1 {
     background-image: url(../images/dyadic.png);
     height: 200px;
@@ -189,15 +194,10 @@ __________           .___
     width: 100%;
     margin-bottom: 4px;
 }
-
-/*
-___________            __                
-\_   _____/___   _____/  |_  ___________ 
- |    __)/  _ \ /  _ \   __\/ __ \_  __ \
- |     \(  <_> |  <_> )  | \  ___/|  | \/
- \___  / \____/ \____/|__|  \___  >__|   
-     \/                         \/       
-*/
+.msg-feedback-success,
+.msg-feedback-failed {
+    display: none;
+}
 
 @media screen and (min-width: 480px) {
     .banner {
