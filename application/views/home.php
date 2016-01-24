@@ -262,7 +262,7 @@
     </div>
     <script>
         $(document).ready(function() {
-			$('#form-submit').on('click', function() {
+			$('#form-submit').on('click', function() {				
 				var nm = $('#form-name').val();
 				var ph = $('#form-phone').val();
 				var eml = $('#form-email').val();
@@ -275,12 +275,15 @@
 	        		data: dataStr,
 	        		type: 'post',
 	        		success: function(res) {
+						console.log(res);
+		        		
 	        			$('#msg-feedback-success, #msg-feedback-failed').hide();
 		        		
-						if(res == '1') {
-							$('#msg-feedback-success').show();
+						if(parseInt(res) == 1) {
+							$('.msg-feedback-success').show();
+							$('#form-name, #form-phone, #form-email, #form-msg').val('');
 						} else {
-							$('#msg-feedback-failed').show();
+							$('.msg-feedback-failed').show();
 						}
 			        }
 	        	});
